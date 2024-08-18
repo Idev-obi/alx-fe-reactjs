@@ -1,4 +1,4 @@
-import WelcomeMessage from './WelcomeMessage'
+import WelcomeMessage from './userProfile.jsx'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -52,3 +52,20 @@ const App = () => {
 };
 
 export default App;*/
+
+
+// src/App.jsx
+
+import React from 'react';
+import UserProfile from './components/UserProfile';
+
+function App() {
+  return (
+    <div>
+      <h1>User Profile</h1>
+      <UserProfile name="Alice" age={25} bio="Loves hiking and photography" />
+    </div>
+  );
+}
+
+export default App;
