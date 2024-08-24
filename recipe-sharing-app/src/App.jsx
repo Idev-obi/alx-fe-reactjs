@@ -1,5 +1,4 @@
-/*import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+/*import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'*/
 
@@ -35,7 +34,7 @@ import './App.css'*/
 export default App*/
 
 
-import React from 'react';
+/*import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
@@ -59,7 +58,25 @@ const App = () => {
   );
 };
 
+export default App;*/
+
+// App.js
+import React from 'react';
+import SearchBar from './SearchBar';
+import RecipeList from './RecipeList';
+
+const App = () => {
+  return (
+    <div>
+      <h1>Recipe Sharing Application</h1>
+      <SearchBar />
+      <RecipeList />
+    </div>
+  );
+};
+
 export default App;
+
 
 
 

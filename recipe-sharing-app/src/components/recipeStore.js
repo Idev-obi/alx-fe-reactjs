@@ -12,8 +12,28 @@ import create from 'zustand';
 // Define the Zustand store
 const useRecipeStore = create(set => ({
   recipes: [],
+  searchTerm: '',
+  setSearchTerm: (term) => {
+    set({ searchTerm: term });
+    // Trigger filtering whenever the search term is updated
+    set(state => ({
+      filteredRecipes: state.recipes.filter(recipe =>
+        recipe.title.toLowerCase().includes(term.toLowerCase())
+      )
+    }));
+  },
+  filteredRecipes: [],
+  filterRecipes: () => {
+    set(state => ({
+      filteredRecipes: state.recipes.filter(recipe =>
+        recipe.title.toLowerCase().includes(state.searchTerm.toLowerCase())
+      )
+    }));
+  },
+}));
 
-  // Action to add a new recipe
+export default useRecipeStore;
+ /* // Action to add a new recipe
   addRecipe: (newRecipe) => set(state => ({
     recipes: [...state.recipes, newRecipe]
   })),
@@ -34,4 +54,4 @@ const useRecipeStore = create(set => ({
   setRecipes: (recipes) => set({ recipes })
 }));
 
-export default useRecipeStore;
+export default useRecipeStore;*/
