@@ -1,5 +1,4 @@
 // src/components/Counter.jsx
-
 import React, { useState } from 'react';
 
 function Counter() {
