@@ -7,7 +7,7 @@ const useRecipeStore = create(set => ({
 }));*/
 
 
-import create from 'zustand';
+/*import create from 'zustand';
 
 // Define the Zustand store
 const useRecipeStore = create(set => ({
@@ -55,3 +55,31 @@ export default useRecipeStore;
 }));
 
 export default useRecipeStore;*/
+import create from 'zustand';
+
+const useRecipeStore = create(set => ({
+  recipes: [], // This should be populated with your recipe data
+  favorites: [],
+  addFavorite: (recipeId) => set(state => ({
+    favorites: [...state.favorites, recipeId]
+  })),
+  removeFavorite: (recipeId) => set(state => ({
+    favorites: state.favorites.filter(id => id !== recipeId)
+  })),
+  recommendations: [],
+  generateRecommendations: () => set(state => {
+    // Simple recommendation logic: recommend recipes similar to favorites
+    const favoriteRecipes = state.recipes.filter(recipe => 
+      state.favorites.includes(recipe.id)
+    );
+    
+    // Example logic: recommend other recipes that are not already favorited
+    const recommended = state.recipes.filter(recipe =>
+      !state.favorites.includes(recipe.id) && Math.random() > 0.5
+    );
+
+    return { recommendations: recommended };
+  }),
+}));
+
+export default useRecipeStore;
