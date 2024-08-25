@@ -51,7 +51,7 @@ export default RecipeList;*/
 
 
 import React, { useEffect } from 'react';
-import useStore from './store';
+import useStore from './recipeStore';
 
 const RecipeList = () => {
   const { filteredRecipes, searchTerm, setSearchTerm } = useStore((state) => ({
