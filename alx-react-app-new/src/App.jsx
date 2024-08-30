@@ -1,6 +1,6 @@
 // src/App.jsx
-import React from 'react';
-import Counter from '/components/Counter';
+//import React from 'react';
+import Counter from './components/counter';
 
 function App() {
   return (
