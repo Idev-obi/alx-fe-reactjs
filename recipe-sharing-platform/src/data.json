@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper. Creamy and rich, it's perfect for a quick and comforting meal.",
+    "image": "sea.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Tender chicken chunks marinated in yogurt and spices, then simmered in a creamy, spiced tomato sauce. A popular dish in Indian cuisine.",
+    "image": "chickenTikka.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Vegetable Stir-Fry",
+    "summary": "A quick and healthy dish featuring a mix of colorful vegetables stir-fried with garlic, ginger, and soy sauce. Perfect over rice or noodles.",
+    "image": "vegieStirFry.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Beef Tacos",
+    "summary": "Delicious tacos filled with seasoned ground beef, lettuce, cheese, and salsa. Easy to make and great for a casual meal with friends or family.",
+    "image": "beefTacos.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Chocolate Chip Cookies",
+    "summary": "Classic homemade cookies with gooey chocolate chips and a hint of vanilla. Crispy on the edges and chewy in the middle—always a crowd-pleaser.",
+    "image": "choco.jpg"
+  }
+]
