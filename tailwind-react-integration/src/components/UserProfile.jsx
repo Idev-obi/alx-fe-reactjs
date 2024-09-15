@@ -2,19 +2,18 @@
 
 function UserProfile() {
     return (
-      <div className="bg-gray-100 p-4 sm:p-6 md:p-8 max-w-xs sm:max-w-sm md:max-w-md mx-auto my-10 md:my-20 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="User"
-          className="rounded-full w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 mx-auto transition-transform duration-300 ease-in-out hover:scale-110"
-        />
-        <h1 className="text-lg sm:text-xl md:text-xl text-blue-800 my-3 sm:my-4 md:my-4 hover:text-blue-500 transition-colors duration-300 ease-in-out">
-          John Doe
-        </h1>
-        <p className="text-sm sm:text-base md:text-base text-gray-600">
-          Developer at Example Co. Loves to write code and explore new technologies.
-        </p>
-      </div>
+      <div class="container mx-auto p-4 sm:p-6 md:p-8 lg:p-12 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+  <div class="flex flex-col items-center">
+    <img src="profile.jpg" alt="Profile Picture" class="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full"/>
+    <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mt-4">
+      User Name
+    </h1>
+    <p class="text-sm sm:text-base md:text-lg lg:text-xl mt-2 text-center">
+      Brief description or bio goes here. This text will adjust based on screen size.
+    </p>
+  </div>
+</div>
+
     );
   }
   
